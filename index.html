@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/html-css_87_Nikolaihait4/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Нормализатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS-стили -->
+    
+    <script type="module" crossorigin src="/html-css_87_Nikolaihait4/assets/index-0910e683.js"></script>
+    <link rel="stylesheet" href="/html-css_87_Nikolaihait4/assets/index-5fc7e37d.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+  <div class="container">
+    <div class="header-left-side">
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#fruits" class="nav-link">Fruits</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="" class="logo">
+        <svg class="logo-icon" width="156" height="18">
+          <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-logo"></use>
+        </svg>
+      </a>
+    </div>
+    <!-- ^Mob menu buttons -->
+    <div class="mob-menu-btn-box">
+      <button class="mob-menu-btn js-open-menu" type="button">
+        <svg class="mob-menu-icon" width="24" height="24">
+          <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+      <button
+        class="mob-menu-btn js-close-menu js-close-menu-main js-close-menu hidden"
+        type="button"
+      >
+        <svg class="mob-menu-close-btn" width="24" height="24">
+          <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- ^/mob menu buttopns -->
+    <a class="basket">
+      <svg class="basket-icon" width="24" height="24">
+        <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-basket"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+<div class="mob-menu js-menu-container">
+  <ul class="mob-nav-list">
+    <li class="mob-nav-item">
+      <a href="#how-it-works" class="mob-nav-link nav-link js-close-menu">
+        How It Works
+      </a>
+    </li>
+    <li class="mob-nav-item">
+      <a href="#fruits" class="mob-nav-link nav-link js-close-menu"> Fruits </a>
+    </li>
+    <li class="mob-nav-item">
+      <a href="#contacts" class="mob-nav-link nav-link js-close-menu">
+        Contacts
+      </a>
+    </li>
+    <li class="mob-nav-item">
+      <a href="" class="basket mob-basket">
+        <svg class="mob-bas" width="24" height="24">
+          <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-basket"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+    <main>
+      <!-- Main -->
+      <!-- Hero-section1 -->
+      <section class="hero">
+  <div class="container">
+    <div class="hero-baner">
+      <h2 class="hero-title">
+        fresh harvest box<br />is your one-stop place for a delicious fruit
+        basket
+      </h2>
+      <picture>
+        <!-- Tablet, desktop screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="/html-css_87_Nikolaihait4/assets/hero-img-tab-6195f078.png 1x, /html-css_87_Nikolaihait4/assets/hero-img-tab_2x-8056e6af.png 2x"
+          type="image/png"
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="/html-css_87_Nikolaihait4/assets/hero-img-mob-d54ebf81.png 1x, /html-css_87_Nikolaihait4/assets/hero-img-mob_2x-f88a520a.png 2x"
+          type="image/png"
+        />
+        <img
+          class="hero-img"
+          src="/html-css_87_Nikolaihait4/assets/hero-img-mob-d54ebf81.png"
+          alt="girl with fruit"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+
+    <button class="button-hero" type="button">
+      <a href="#fruits">shop now</a>
+    </button>
+    <div class="hero-fruits">
+      <p class="hero-text">
+        Our expertly curated fruit baskets are made with the freshest, highest
+        quality fruits available. Whether you are looking for a healthy snack or
+        a gift for a loved one, Fresh Harvest Box has got you covered.
+      </p>
+      <div class="watermelow">
+        <p class="card-title">Fruit</p>
+        <img
+          class="watermelon-hero"
+          srcset="/html-css_87_Nikolaihait4/assets/waterlmelon-340c8cd3.png 1x, /html-css_87_Nikolaihait4/assets/waterlmelon_2x-469b6a38.png 2x"
+          src="/html-css_87_Nikolaihait4/assets/waterlmelon-340c8cd3.png"
+          alt="watermelon"
+          width="200"
+          loading="lazy"
+        />
+        <p class="card_text">
+          Refreshing and juicy, watermelon is the perfect summer treat and a
+          great source of hydration
+        </p>
+      </div>
+      <div class="hero-tegs-block">
+        <ul class="hero-tegs-list">
+          <li class="hero-tegs">
+            <h3 class="hero-tegs-txt">#organic</h3>
+          </li>
+          <li class="hero-tegs">
+            <h3 class="hero-tegs-txt">#products</h3>
+          </li>
+          <li class="hero-tegs">
+            <h3 class="hero-tegs-txt">#basket</h3>
+          </li>
+          <li class="hero-tegs">
+            <h3 class="hero-tegs-txt">#fruits</h3>
+          </li>
+        </ul>
+      </div>
+      <div class="basket-strawberry">
+        <p class="card-title">Fruit</p>
+        <img
+          class="basket_strawberry_img"
+          srcset="/html-css_87_Nikolaihait4/assets/basket_strawberry-49d5e733.png 1x, /html-css_87_Nikolaihait4/assets/basket_strawberry_2x-b3c087e4.png 2x"
+          src="/html-css_87_Nikolaihait4/assets/basket_strawberry-49d5e733.png"
+          alt="basket strawberry"
+          width="162"
+          loading="lazy"
+        />
+        <p class="card_text card_text_strb">
+          Sweet and juicy, strawberries are packed with vitamin C and
+          antioxidants, making them a delicious and healthy snack
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Howitworks-sektion2 -->
+      <section id="how-it-works" class="section-steps">
+  <div class="container steps-container">
+    <div class="steps-content">
+      <h2 class="steps-title">
+        To order your fruit basket, simply follow these easy steps
+      </h2>
+      <p class="steps-description">
+        Our baskets are assembled with care and delivered straight to your
+        doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+        your home. Whether you're looking for a healthy snack or a thoughtful
+        gift, our fruit baskets are the perfect choice.
+      </p>
+    </div>
+
+    <div class="blocks">
+      <ul class="steps-list list">
+        <li class="steps-item">
+          <div class="oval">
+            <h3 class="number number-one">First Step</h3>
+            <p class="instruction">
+              Just choose the fruit you want to order by clicking on the
+              checkboxes next to it.
+            </p>
+          </div>
+        </li>
+
+        <li class="steps-item">
+          <div class="oval">
+            <h3 class="number number-two">Second Step</h3>
+            <p class="instruction">
+              Click on the basket and fill out the form.
+            </p>
+          </div>
+        </li>
+
+        <li class="steps-item">
+          <div class="oval">
+            <h3 class="number number-three">Third Step</h3>
+            <p class="instruction">
+              Sit back and relax! Your fresh fruit basket will be delivered.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="image-container">
+      <img class="steps-image" loading="lazy" src="/html-css_87_Nikolaihait4/assets/gif_desc-564d0096.gif" alt="Berries" />
+    </div>
+  </div>
+</section>
+
+
+      <!-- Fruits-section3 -->
+      <section id="fruits" class="fruits">
+  <div class="container">
+    <div class="fruits-container">
+      <h2 class="fruits-title">ORGANIC FRUITS</h2>
+      <p class="fruits-text">
+        Our organic fruits are hand-picked from local farms and delivered
+        straight to your doorstep, ensuring that you get the freshest and most
+        nutritious produce possible. We offer a wide selection of organic fruits
+        grown without the use of harmful pesticides or chemicals.
+      </p>
+    </div>
+    <div class="mobile-fruits stile">
+      <ul class="menu-fruits card-set">
+        <li class="fruits-item strawberry">
+          <h3 class="subtitle-description">Strawberry</h3>
+          <p class="description-text">Plant</p>
+          <img
+            class="fruits-img"
+            srcset="/html-css_87_Nikolaihait4/assets/Strawberry@1x-fcf6a1ec.png 1x, /html-css_87_Nikolaihait4/assets/Strawberry@2x-26ccbf21.png 2x"
+            src="/html-css_87_Nikolaihait4/assets/Strawberry@1x-fcf6a1ec.png"
+            alt="Strawberry"
+            width="295"
+            height="276"
+            loading="lazy"
+          />
+          <span class="fruits-price">100 UAH / kg</span>
+        </li>
+        <li class="fruits-item banana">
+          <h3 class="subtitle-description">Banana</h3>
+          <p class="description-text">Plant</p>
+          <img
+            class="fruits-img"
+            srcset="/html-css_87_Nikolaihait4/assets/Banana@1x-a9b86638.png 1x, /html-css_87_Nikolaihait4/assets/Banana@2x-680b3ad8.png 2x"
+            src="/html-css_87_Nikolaihait4/assets/Banana@1x-a9b86638.png"
+            alt="Banana"
+            width="295"
+            height="276"
+            loading="lazy"
+          />
+          <span class="fruits-price">80 UAH / kg</span>
+        </li>
+        <li class="fruits-item watermelon">
+          <h3 class="subtitle-description">Watermelon</h3>
+          <p class="description-text">Plant</p>
+          <img
+            class="fruits-img"
+            srcset="/html-css_87_Nikolaihait4/assets/Watermelon@1x-4a8a38a0.png 1x, /html-css_87_Nikolaihait4/assets/Watermelon@2x-26f5ec94.png 2x"
+            src="/html-css_87_Nikolaihait4/assets/Watermelon@1x-4a8a38a0.png"
+            alt="Watermelon"
+            width="295"
+            height="276"
+            loading="lazy"
+          />
+          <span class="fruits-price">40 UAH / kg</span>
+        </li>
+        <li class="fruits-item lime">
+          <h3 class="subtitle-description">Lime</h3>
+          <p class="description-text">Plant</p>
+          <img
+            class="fruits-img"
+            srcset="/html-css_87_Nikolaihait4/assets/Lime@1x-6d50a5dd.png 1x, /html-css_87_Nikolaihait4/assets/Lime@2x-8dd5019c.png 2x"
+            src="/html-css_87_Nikolaihait4/assets/Lime@1x-6d50a5dd.png"
+            alt="Lime"
+            width="295"
+            height="276"
+            loading="lazy"
+          />
+          <span class="fruits-price">60 UAH / kg</span>
+        </li>
+        <li class="fruits-item apple">
+          <h3 class="subtitle-description">Apple</h3>
+          <p class="description-text">Plant</p>
+          <img
+            class="fruits-img"
+            srcset="/html-css_87_Nikolaihait4/assets/Apple@1x-f850e15f.png 1x, /html-css_87_Nikolaihait4/assets/Apple@2x-32ee3f3b.png 2x"
+            src="/html-css_87_Nikolaihait4/assets/Apple@1x-f850e15f.png"
+            alt="Apple"
+            width="295"
+            height="276"
+            loading="lazy"
+          />
+          <span class="fruits-price">50 UAH / kg</span>
+        </li>
+        <li class="fruits-item peach">
+          <h3 class="subtitle-description">Peach</h3>
+          <p class="description-text">Plant</p>
+          <img
+            class="fruits-img"
+            srcset="/html-css_87_Nikolaihait4/assets/Peach@1x-f14ae88a.png 1x, /html-css_87_Nikolaihait4/assets/Peach@2x-925cedc1.png 2x"
+            src="/html-css_87_Nikolaihait4/assets/Peach@1x-f14ae88a.png"
+            alt="Peach"
+            width="295"
+            height="276"
+            loading="lazy"
+          />
+          <span class="fruits-price">80 UAH / kg</span>
+        </li>
+        <li class="fruits-item plums">
+          <h3 class="subtitle-description">Plums</h3>
+          <p class="description-text">Plant</p>
+          <img
+            class="fruits-img"
+            srcset="/html-css_87_Nikolaihait4/assets/Plums@1x-5ce3af29.png 1x, /html-css_87_Nikolaihait4/assets/Plums@2x-4384ec9c.png 2x"
+            src="/html-css_87_Nikolaihait4/assets/Plums@1x-5ce3af29.png"
+            alt="Plums"
+            width="295"
+            height="276"
+            loading="lazy"
+          />
+          <span class="fruits-price">40 UAH / kg</span>
+        </li>
+        <li class="fruits-item orange">
+          <h3 class="subtitle-description">Orange</h3>
+          <p class="description-text">Plant</p>
+          <img
+            class="fruits-img"
+            srcset="/html-css_87_Nikolaihait4/assets/Orange@1x-7dd2badd.png 1x, /html-css_87_Nikolaihait4/assets/Orange@2x-c5819f05.png 2x"
+            src="/html-css_87_Nikolaihait4/assets/Orange@1x-7dd2badd.png"
+            alt="Orange"
+            width="295"
+            height="276"
+            loading="lazy"
+          />
+          <span class="fruits-price">60 UAH / kg</span>
+        </li>
+        <li class="fruits-item kiwi">
+          <h3 class="subtitle-description">Kiwi</h3>
+          <p class="description-text">Plant</p>
+          <img
+            class="fruits-img"
+            srcset="/html-css_87_Nikolaihait4/assets/Kiwi@1x-5fe9be2f.png 1x, /html-css_87_Nikolaihait4/assets/Kiwi@2x-c3c596a5.png 2x"
+            src="/html-css_87_Nikolaihait4/assets/Kiwi@1x-5fe9be2f.png"
+            alt="Kiwi"
+            width="295"
+            height="276"
+            loading="lazy"
+          />
+          <span class="fruits-price">90 UAH / kg</span>
+        </li>
+      </ul>
+    </div>
+    <button class="button-title js-open-modal" type="button" data-modal="1">
+      <svg class="fruits-icon" width="14" height="14">
+        <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-Vector"></use>
+      </svg>
+      ORDER
+    </button>
+  </div>
+</section>
+
+
+      <!-- Contact-section4 -->
+      <section id="contacts" class="contact-section">
+  <div class="container contacts-container">
+    <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
+    <div class="contacts-pic">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          sizes="(min-width: 1280px) 792px, 100vw"
+          srcset="/html-css_87_Nikolaihait4/assets/contacts-1desk@1x-90034d4d.jpg 792w, /html-css_87_Nikolaihait4/assets/contacts-1desk@2x-d278a637.jpg 1584w"
+        />
+        <source
+          media="(min-width: 768px)"
+          sizes="(min-width: 768px) 344px, 100vw"
+          srcset="/html-css_87_Nikolaihait4/assets/contacts-1tab@1x-19da6134.jpg 344w, /html-css_87_Nikolaihait4/assets/contacts-1tab@2x-bf9b00ee.jpg 688w"
+        />
+        <source
+          media="(max-width: 767px)"
+          sizes="(min-width: 280px) 335px, 100vw"
+          srcset="/html-css_87_Nikolaihait4/assets/contacts-1mob@1x-a0ca14b1.jpg 335w, /html-css_87_Nikolaihait4/assets/contacts-1mob@2x-73a5a850.jpg 670w"
+        />
+        <img
+          class="contacts-img-1"
+          src="/html-css_87_Nikolaihait4/assets/contacts-1mob@1x-a0ca14b1.jpg"
+          alt="melon"
+        />
+      </picture>
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          sizes="(min-width: 1280px) 792px, 100vw"
+          srcset="/html-css_87_Nikolaihait4/assets/contacts-2desk@1x-2bd48cc8.jpg 792w, /html-css_87_Nikolaihait4/assets/contacts-2desk@2x-e38459a4.jpg 1584w"
+        />
+        <source
+          media="(min-width: 768px)"
+          sizes="(min-width: 768px) 344px, 100vw"
+          srcset="/html-css_87_Nikolaihait4/assets/contacts-2tab@1x-eefad118.jpg 344w, /html-css_87_Nikolaihait4/assets/contacts-2tab@2x-702c2842.jpg 688w"
+        />
+        <img
+          class="contacts-img-2"
+          src="/html-css_87_Nikolaihait4/assets/contacts-2tab@1x-eefad118.jpg"
+          alt="blueberry"
+        />
+      </picture>
+    </div>
+    <div class="contacts-block">
+      <p class="contacts-text">
+        Our boxes are packed with delicious, nutritious fruits and vegetables,
+        perfect for anyone looking to eat healthier or support local farmers.
+        Order your box today and start enjoying the best that nature has to
+        offer!
+      </p>
+      <form class="thank-form">
+        <div class="contacts-form-field">
+          <input
+            class="contacts-input"
+            type="email"
+            name="contacts-email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+            placeholder=" "
+            id="contacts-email"
+          />
+          <label class="contacts-label" for="contacts-email"
+            >Enter email...</label
+          >
+          <button
+            class="contacts-btn contacts-button"
+            data-modal="modal-thank-you"
+            type="submit"
+          >
+            send
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- Footer-section5 -->
+    <footer class="footer">
+  <div class="container footer-container">
+      <div class="footer-div-logo">
+        <div class="footer-div-logo-and-text">
+          <img
+            src="/html-css_87_Nikolaihait4/assets/tel-logo@1x-3e56dd94.png"
+            srcset="/html-css_87_Nikolaihait4/assets/tel-logo@1x-3e56dd94.png 1x, /html-css_87_Nikolaihait4/assets/tel-logo@2x-ba51330f.png 2x"
+            alt="Woman with fresh bananas"
+            width="335"
+            class="footer-img one"
+          />
+          <img
+            src="/html-css_87_Nikolaihait4/assets/tab-desk-logo@1x-d7884e38.png"
+            srcset="/html-css_87_Nikolaihait4/assets/tab-desk-logo@1x-d7884e38.png 1x, /html-css_87_Nikolaihait4/assets/tab-desk-logo@2x-0775bddb.png 2x"
+            alt="Woman with fresh bananas"
+            width="349"
+            class="footer-img two"
+          />
+          <a class="footer-link" href="../index.html">
+            <svg class="footer-svg" width="16" height="16">
+              <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-vector-6"></use>
+            </svg>
+            <p class="footer-text">fresh harvest box</p>
+          </a>
+        </div>
+        <ul class="footer-menu-list">
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#how-it-works">How It Works</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#fruits">Fruits</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-socials">
+          <ul class="footer-socials-list">
+            <li>
+              <a
+                class="footer-socials-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook icon"
+              >
+                <svg class="footer-socials-svg" width="24" height="24">
+                  <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-socials-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram icon"
+              >
+                <svg class="footer-socials-svg" width="24" height="24">
+                  <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-socials-link"
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Youtube icon"
+              >
+                <svg class="footer-socials-svg" width="24" height="24">
+                  <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        <div class="footer-div-address">
+          <address class="footer-address">
+            <ul class="footer-address-list">
+              <li class="footer-address-item">
+                <a href="tel:+380684439426" class="">+380 (68) 443-94-26</a>
+              </li>
+              <li class="footer-address-item">
+                <a
+                  href="https://goo.gl/maps/NcAdATMJySbre9q66?coh=178573&entry=tt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  1678 S. Pioneer Road<br />
+                  Salt Lake City UT<br />
+                  84104
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+  </div>
+</footer>
+
+
+    <!-- Modal window -->
+    <!-- Yourorder-section6 -->
+    <div class="backdrop" data-modal="1">
+  <div class="modal active order-modal">
+    <h1 class="modal-title-text">Your Order</h1>
+    <button
+      class="modal-btn-close js-modal-close"
+      type="button"
+      data-modal-close
+    >
+      <svg class="icon" width="24" height="24">
+        <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <form class="modal-form">
+      <ul class="modal-order-list">
+        <li class="modal-order-item">
+          <label class="order order-strawberry">
+            <span class="order-title">Strawberry Basket</span>
+            <span class="order-text">Plant</span>
+            <img
+              class="order-img"
+              srcset="/html-css_87_Nikolaihait4/assets/img-1_88-ce74d3bb.png 88w, /html-css_87_Nikolaihait4/assets/img-1_133-8604eab9.png 133w, /html-css_87_Nikolaihait4/assets/img-1_173-fd4d5159.png 173w, /html-css_87_Nikolaihait4/assets/img-1_176-058dce0b.png 176w, /html-css_87_Nikolaihait4/assets/img-1_266-e63d1f2b.png 266w, /html-css_87_Nikolaihait4/assets/img-1_346-6f40047d.png 346w"
+              sizes="
+                (min-width: 1280px) 173px,
+                (min-width: 768px) 133px,
+                (max-width: 767px) 88px"
+              src="./img/order/img-1-88.png"
+              alt="Strawberry Basket"
+              loading="lazy"
+            />
+            <input
+              class="order-input visually-hidden"
+              type="checkbox"
+              name="strawberry-basket"
+              checked
+            />
+            <span class="order-input-cust">
+              <svg class="check-icon" width="6" height="6">
+                <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-pick"></use>
+              </svg>
+            </span>
+          </label>
+        </li>
+        <li class="modal-order-item">
+          <label class="order order-apple">
+            <span class="order-title">Apple Basket</span>
+            <span class="order-text">Plant</span>
+            <img
+              class="order-img"
+              srcset="/html-css_87_Nikolaihait4/assets/img-2_106-8cec34b9.png 106w, /html-css_87_Nikolaihait4/assets/img-2_172-36490095.png 172w, /html-css_87_Nikolaihait4/assets/img-2_212-d5f21259.png 212w, /html-css_87_Nikolaihait4/assets/img-2_229-69cbd681.png 229w, /html-css_87_Nikolaihait4/assets/img-2_344-67f5f5ce.png 344w, /html-css_87_Nikolaihait4/assets/img-2_458-995d3c97.png 458w"
+              sizes="
+                (min-width: 1280px) 229px,
+                (min-width: 768px) 172px,
+                (max-width: 767px) 106px"
+              src="./img/order/img-2-106.png"
+              alt="Apple Baske"
+              loading="lazy"
+            />
+            <input
+              class="order-input visually-hidden"
+              type="checkbox"
+              name="apple-basket"
+            />
+            <span class="order-input-cust">
+              <svg class="check-icon" width="6" height="6">
+                <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-pick"></use>
+              </svg>
+            </span>
+          </label>
+        </li>
+        <li class="modal-order-item">
+          <label class="order order-fruits">
+            <span class="order-title">Fruits Basket</span>
+            <span class="order-text">Plant</span>
+            <img
+              class="order-img"
+              srcset="/html-css_87_Nikolaihait4/assets/img-3_107-c8474d76.png 107w, /html-css_87_Nikolaihait4/assets/img-3_172-326a1a08.png 172w, /html-css_87_Nikolaihait4/assets/img-3_214-d6fbdf20.png 214w, /html-css_87_Nikolaihait4/assets/img-3_229-505476ae.png 229w, /html-css_87_Nikolaihait4/assets/img-3_344-abf3b22c.png 344w, /html-css_87_Nikolaihait4/assets/img-3_458-4e73102e.png 458w"
+              sizes="
+                (min-width: 1280px) 229px,
+                (min-width: 768px) 172px,
+                (max-width: 767px) 107px"
+              src="./img/order/img-3-107.png"
+              alt="Fruits Basket"
+              loading="lazy"
+            />
+            <input
+              class="order-input visually-hidden"
+              type="checkbox"
+              name="fruits-basket"
+            />
+            <span class="order-input-cust">
+              <svg class="check-icon" width="6" height="6">
+                <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-pick"></use>
+              </svg>
+            </span>
+          </label>
+        </li>
+      </ul>
+      <span class="modal-input-decor">
+        <input
+          class="modal-form-input"
+          type="text"
+          name="user-name"
+          pattern="^[A-Za-zА-Яа-яґҐЁёІіЇїЄє][A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ0-9- ]+$"
+          placeholder="Enter full name..."
+          required
+        />
+        <input
+          class="modal-form-input"
+          type="email"
+          name="user-email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          placeholder="Enter email..."
+          required
+        />
+        <input
+          class="modal-form-input"
+          type="text"
+          name="user-card"
+          pattern="[0-9]{13,16}"
+          placeholder="Enter card.."
+          required
+        />
+        <textarea
+          class="modal-form-massage"
+          name="user-comment"
+          placeholder="Enter comments..."
+        ></textarea>
+      </span>
+      <button class="modal-btn-submit" type="submit">submit</button>
+    </form>
+    <div class="fon-img"></div>
+  </div>
+</div>
+
+
+    <!-- Thankyou-section7 -->
+    <div class="backdrop overlay" >
+  <div class=" modal-thank-you">
+    <button
+      class="modal-thank-btn close-btn"
+      type="button"
+      data-modal-close
+    >
+      <svg class="modal-thank-icon" width="12" height="12">
+        <use href="/html-css_87_Nikolaihait4/assets/icon-55d4a9e7.svg#icon-close-black"></use>
+      </svg>
+    </button>
+    <img
+      class="img-thank"
+      srcset="/html-css_87_Nikolaihait4/assets/thank-m-2a153645.png 1x, /html-css_87_Nikolaihait4/assets/thank-m@2x-29a249ed.png 2x"
+      src="/html-css_87_Nikolaihait4/assets/thank-m-2a153645.png"
+      alt="raspberries"
+      width="278px"
+      height="239px"
+    />
+    <h1 class="thank-title">THANK YOU</h1>
+    <p class="thank-text">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
+</div>
+
+
+    <!-- <section> -->
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1> -->
+    <!-- Path to images as from index.html file -->
+    <!-- <img src="./img/javascript.svg" alt="" /> -->
+    <!-- </section> -->
+
+    <!-- Loads the specified .html file
+    ENOENT: no such file or directory, open '/home/runner/work/html-css_87_Nikolaihait4/html-css_87_Nikolaihait4/src/partials/vite-promo.html' -->
+
+    
+  </body>
+</html>
